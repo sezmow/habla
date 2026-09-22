@@ -1,0 +1,188 @@
+/* Design tokens.
+   Indigo = learning & navigation. Coral = speaking & voice. Green/amber/red = feedback.
+   Spanish text uses Fraunces; the interface uses Figtree. */
+
+:root {
+  --font-ui: "Figtree Variable", "Figtree", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-es: "Fraunces Variable", "Fraunces", ui-serif, Georgia, serif;
+
+  --bg: #f7f5f0;
+  --bg-sunken: #efece5;
+  --surface: #ffffff;
+  --surface-2: #faf8f4;
+  --surface-hover: #f4f1ea;
+  --border: #e7e2d8;
+  --border-strong: #d6d0c3;
+
+  --text: #1a1d2e;
+  --text-2: #50556a;
+  --text-3: #7f8497;
+  --text-inverse: #ffffff;
+
+  --primary: #3b3fb6;
+  --primary-hover: #3236a3;
+  --primary-press: #2a2d8c;
+  --primary-soft: #ecedfa;
+  --primary-soft-2: #dfe0f6;
+  --primary-text: #2f33a0;
+
+  --accent: #e5603f;
+  --accent-hover: #d6532f;
+  --accent-soft: #fdece6;
+  --accent-text: #b8401f;
+
+  --success: #1d8a57;
+  --success-soft: #e4f4eb;
+  --success-text: #146a42;
+  --warning: #b57a07;
+  --warning-soft: #fbf1d8;
+  --warning-text: #8a5c00;
+  --danger: #c4443a;
+  --danger-soft: #fbe8e5;
+  --danger-text: #a3342b;
+
+  --meter-track: #ebe7df;
+  --btn-primary: #3b3fb6;
+  --btn-primary-hover: #3236a3;
+  --btn-accent: #c84b29;
+  --btn-accent-hover: #b54223;
+
+  /* Chart series (validated for CVD separation and contrast on both surfaces). */
+  --chart-speaking: #e5603f;
+  --chart-listening: #3b3fb6;
+  --chart-other: #2a9d8f;
+  --chart-grid: #ebe7df;
+
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-pill: 999px;
+
+  --shadow-1: 0 1px 2px rgba(26, 29, 46, 0.05);
+  --shadow-2: 0 1px 2px rgba(26, 29, 46, 0.04), 0 6px 20px -8px rgba(26, 29, 46, 0.1);
+  --shadow-3: 0 2px 6px rgba(26, 29, 46, 0.06), 0 18px 48px -16px rgba(26, 29, 46, 0.22);
+  --ring: 0 0 0 3px rgba(59, 63, 182, 0.28);
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-1: 120ms;
+  --dur-2: 220ms;
+  --dur-3: 380ms;
+
+  --sidebar-w: 244px;
+  --content-max: 1080px;
+  --topbar-h: 64px;
+  --bottomnav-h: 64px;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1220;
+    --bg-sunken: #0a0d18;
+    --surface: #151a2b;
+    --surface-2: #192036;
+    --surface-hover: #1d2440;
+    --border: #262e48;
+    --border-strong: #354064;
+    --text: #eceef6;
+    --text-2: #a9afc4;
+    --text-3: #7c839c;
+    --primary: #8a8ff2;
+    --primary-hover: #9ca0f5;
+    --primary-press: #7a7fe6;
+    --primary-soft: #1e2350;
+    --primary-soft-2: #272d63;
+    --primary-text: #b3b6fa;
+    --accent: #f08566;
+    --accent-hover: #f3977c;
+    --accent-soft: #3a2220;
+    --accent-text: #f7a58c;
+    --success: #43b985;
+    --success-soft: #16301f;
+    --success-text: #7fd7ab;
+    --warning: #e0a73a;
+    --warning-soft: #33280f;
+    --warning-text: #f0c56f;
+    --danger: #ea6a5f;
+    --danger-soft: #3a1c1b;
+    --danger-text: #f59b92;
+    --meter-track: #242b44;
+    --chart-speaking: #d9694d;
+    --btn-primary: #5257d6;
+    --btn-primary-hover: #5f64e0;
+    --btn-accent: #c4502f;
+    --btn-accent-hover: #d15a38;
+    --chart-listening: #7479e0;
+    --chart-other: #25a592;
+    --chart-grid: #242b44;
+    --text-inverse: #0e1220;
+    --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-2: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px -10px rgba(0, 0, 0, 0.5);
+    --shadow-3: 0 2px 6px rgba(0, 0, 0, 0.35), 0 20px 50px -16px rgba(0, 0, 0, 0.6);
+    --ring: 0 0 0 3px rgba(138, 143, 242, 0.35);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0e1220;
+  --bg-sunken: #0a0d18;
+  --surface: #151a2b;
+  --surface-2: #192036;
+  --surface-hover: #1d2440;
+  --border: #262e48;
+  --border-strong: #354064;
+  --text: #eceef6;
+  --text-2: #a9afc4;
+  --text-3: #7c839c;
+  --primary: #8a8ff2;
+  --primary-hover: #9ca0f5;
+  --primary-press: #7a7fe6;
+  --primary-soft: #1e2350;
+  --primary-soft-2: #272d63;
+  --primary-text: #b3b6fa;
+  --accent: #f08566;
+  --accent-hover: #f3977c;
+  --accent-soft: #3a2220;
+  --accent-text: #f7a58c;
+  --success: #43b985;
+  --success-soft: #16301f;
+  --success-text: #7fd7ab;
+  --warning: #e0a73a;
+  --warning-soft: #33280f;
+  --warning-text: #f0c56f;
+  --danger: #ea6a5f;
+  --danger-soft: #3a1c1b;
+  --danger-text: #f59b92;
+  --meter-track: #242b44;
+  --chart-speaking: #d9694d;
+  --btn-primary: #5257d6;
+  --btn-primary-hover: #5f64e0;
+  --btn-accent: #c4502f;
+  --btn-accent-hover: #d15a38;
+  --chart-listening: #7479e0;
+  --chart-other: #25a592;
+  --chart-grid: #242b44;
+  --text-inverse: #0e1220;
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-2: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px -10px rgba(0, 0, 0, 0.5);
+  --shadow-3: 0 2px 6px rgba(0, 0, 0, 0.35), 0 20px 50px -16px rgba(0, 0, 0, 0.6);
+  --ring: 0 0 0 3px rgba(138, 143, 242, 0.35);
+  color-scheme: dark;
+}
+
+:root[data-motion="reduced"] {
+  --dur-1: 0ms;
+  --dur-2: 0ms;
+  --dur-3: 0ms;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root:not([data-motion="full"]) {
+    --dur-1: 0ms;
+    --dur-2: 0ms;
+    --dur-3: 0ms;
+  }
+}
