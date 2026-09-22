@@ -1,6 +1,6 @@
 # Habla
 
-**Learn Spanish. Actually speak it.**
+**Learn Spanish. Actually speak it.** · [Live demo](https://sezmow.github.io/habla/)
 
 Habla is a Spanish-learning web app built around one question: *can the learner actually produce this sentence?* It combines a structured curriculum with per-item spaced repetition, active recall, listening, dictation, pronunciation practice, guided roleplays, and an optional AI conversation partner.
 
@@ -15,7 +15,7 @@ On first launch you can start fresh (onboarding + adaptive placement) or **explo
 
 ### Optional: AI conversation partner
 
-Free conversation (speaking stage 7) uses Claude through a small server, so the API key never reaches the browser:
+Free conversation (speaking stage 7) uses Claude through a small server, so the API key never reaches the browser. The GitHub Pages site is static, so it runs without the AI partner:
 
 ```bash
 npm run build
